@@ -1,4 +1,4 @@
-=== WP Pusher Slack Notifications ===
+=== Free WP Github Webhooks ===
 Contributors: tomdo
 Tags: git, WordPress, Github, Webhooks , CI/CD , Headless Wordpress
 Requires at least: 5.0.0
