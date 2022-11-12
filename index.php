@@ -2,7 +2,7 @@
 /**
  * Plugin Name:       Free WP Github Webhooks
  * Description:       Free plugin for setting up Github webhooks for CI/CD
- * Version:           1.0.0
+ * Version:           1.0.1
  * Requires at least: 5.2
  * Requires PHP:      7.2
  * Author:            Tom Do
