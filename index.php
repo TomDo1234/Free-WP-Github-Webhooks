@@ -31,6 +31,10 @@ function crb_load() {
 // if you don't add 3 as as 4th argument, this will not work as expected
 add_action( 'save_post', 'fwpgw_gh_webhooks', 10, 3 );
 function fwpgw_gh_webhooks( $post_ID, $post, $update ) {
+	if( wp_is_post_revision( $post_ID) || wp_is_post_autosave( $post_ID )) { 
+		// Guard Break
+		return; 
+	}
 	$url = carbon_get_theme_option('fwpgw_endpoint');
     $token = carbon_get_theme_option('fwpgw_access_token');
     $branch = carbon_get_theme_option('fwpgw_branch');
